@@ -1,185 +1,77 @@
+import { useState } from "react";
 import logoText from "../assets/company logo - Netarx.svg";
 import toggleIcon from "../assets/icons/toggle.svg";
 
-function NavItem({ text, width, dropdown = false, padding = "0 11px" }) {
-  return (
-    <li
-      className="
-        flex
-        items-center
-        justify-center
-        shrink-0
-        cursor-pointer
-        whitespace-nowrap
-        text-[#354457]
-        text-[20px]
-        font-medium
-        leading-[28px]
-        hover:text-[#E5116E]
-        transition-allduration-300"
-      style={{
-        width: `${width}px`,
-        height: "28px",
-        padding,
-      }}
-    >
-      <span>{text}</span>
+const navItems = [
+  { label: "Why Netarx" },
+  { label: "Product" },
+  { label: "Solutions", dropdown: true },
+  { label: "Resources", dropdown: true },
+  { label: "Support", dropdown: true },
+  { label: "Company", dropdown: true },
+];
 
-      {dropdown && (
-        <img
-          src={toggleIcon}
-          alt=""
-          className="w-[16px] h-[16px] ml-[8px] shrink-0"
-        />
-      )}
+function NavItem({ label, dropdown }) {
+  return (
+    <li className="flex cursor-pointer items-center text-[18px] font-medium whitespace-nowrap text-[#354457] transition hover:text-[#E5116E]">
+      {label}
+
+      {dropdown && <img src={toggleIcon} alt="" className="ml-2 h-4 w-4" />}
     </li>
   );
 }
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <header className="w-full bg-white">
-      <div className="px-25 py-5">
-        <div
-          className="
-            
-            mx-auto
-            flex
-            items-center
-          "
-        >
-          {/* Logo */}
-          <div className="shrink-0 cursor-pointer">
-            <img src={logoText} alt="Netarx" className="w-22.5 h-7.25" />
-          </div>
+    <header className="w-full border-b bg-white">
+      <div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-5 lg:px-20">
+        {/* Logo */}
+        <img src={logoText} alt="Netarx" className="h-8 w-auto shrink-0" />
 
-          {/* Navigation */}
-          <ul
-            className="
-              flex
-              items-center
-             gap-5.5
-            "
-            style={{
-              width: "736px",
-              marginLeft: "32px",
-              justifyContent: "space-between",
-            }}
-          >
-            {/* Why Netarx */}
-            <NavItem text="Why Netarx" width={105} />
+        {/* Desktop Menu */}
+        <ul className="hidden items-center gap-8 xl:flex">
+          {navItems.map((item) => (
+            <NavItem key={item.label} {...item} />
+          ))}
+        </ul>
 
-            {/* Product */}
-            <NavItem text="Product" width={69} />
+        {/* Desktop Buttons */}
+        <div className="hidden items-center gap-3 xl:flex">
+          <button className="h-[60px] w-[176px] rounded-lg border-2 border-[#E5116E] font-bold text-[#E5116E] transition hover:bg-[#FFF0F7]">
+            Download
+          </button>
 
-            {/* Solutions */}
-            <NavItem text="Solutions" width={114} dropdown />
-
-            {/* Resources */}
-            <NavItem text="Resources" width={121} dropdown />
-
-            {/* Support */}
-            <NavItem text="Support" width={102} dropdown />
-
-            {/* Company */}
-            <NavItem text="Company" width={113} dropdown padding="0 1px" />
-          </ul>
-
-          {/* CTA Buttons */}
-          <div
-            className="
-              ml-auto
-              flex
-              items-center
-              gap-[12.2px]
-              shrink-0
-            "
-          >
-            {/* Download Button */}
-            <button
-              className="
-                  px-[45px]
-                  py-[16px]
-                border-[2px]
-                border-[#E5116E]
-                rounded-[8px]
-                bg-white
-                flex
-                items-center
-                justify-center
-                hover:bg-[#FFF0F7]
-                transition-all
-                duration-300
-              "
-            >
-              <div
-                className="
-                  flex
-                  flex-col
-                  items-center
-                  justify-center
-               
-                  self-stretch
-                  rounded-[8px]
-                "
-              >
-                <span
-                  className="
-                    text-[#E8297D]
-                    text-center
-                    text-[15.6px]
-                    font-bold
-                    leading-[28px]
-                  "
-                >
-                  Download
-                </span>
-              </div>
-            </button>
-
-            {/* Contact Us Button */}
-            <button
-              className="
-                w-[176px]
-                h-[60px]
-                rounded-[8px]
-                bg-[#E5116E]
-                flex
-                items-center
-                justify-center
-                hover:bg-[#D30F67]
-                transition-all
-                duration-300
-              "
-            >
-              <div
-                className="
-                  flex
-                  flex-col
-                  items-center
-                  justify-center
-                  px-[45px]
-                  py-[16px]
-                  self-stretch
-                  rounded-[8px]
-                "
-              >
-                <span
-                  className="
-                    text-white
-                    text-center
-                    text-[14px]
-                    font-bold
-                    leading-[28px]
-                  "
-                >
-                  Contact Us
-                </span>
-              </div>
-            </button>
-          </div>
+          <button className="h-[60px] w-[176px] rounded-lg bg-[#E5116E] font-bold text-white transition hover:bg-[#d30f67]">
+            Contact Us
+          </button>
         </div>
+
+        {/* Mobile Button */}
+        <button onClick={() => setOpen(!open)} className="xl:hidden">
+          ☰
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {open && (
+        <div className="border-t bg-white xl:hidden">
+          <ul className="flex flex-col gap-6 p-6">
+            {navItems.map((item) => (
+              <NavItem key={item.label} {...item} />
+            ))}
+
+            <button className="h-12 rounded-lg border-2 border-[#E5116E] font-bold text-[#E5116E]">
+              Download
+            </button>
+
+            <button className="h-12 rounded-lg bg-[#E5116E] font-bold text-white">
+              Contact Us
+            </button>
+          </ul>
+        </div>
+      )}
     </header>
   );
 }

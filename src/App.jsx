@@ -7,18 +7,19 @@ import Objection from "./components/Objection";
 import Trusted from "./components/Trusted";
 import Stop from "./components/Stop";
 import Baner from "./components/Baner";
+
 function App() {
   return (
     <>
       <Navbar />
-      <Hero/>
-      <Trust/>
-      <Revamp/>
-      <Threat/>
-      <Objection/>
-      <Trusted/>
-      <Stop/>
-      <Baner/>
+      <Hero />
+      <Trust />
+      <Revamp />
+      <Threat />
+      <Objection />
+      <Trusted />
+      <Stop />
+      <Baner />
     </>
   );
 }

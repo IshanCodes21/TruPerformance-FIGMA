@@ -2,29 +2,32 @@ import trustedImage from "../assets/trusted/trustedimage.svg";
 function Trusted() {
   return (
     <section className="trusted">
-
-      <div className="trusted-content">
-        <div className="trusted-frame1606">
-                
-                <p className="trusted-label">NIK USER JOURNEY</p>
-                <p className="trusted-heading">Every Interaction<span className="trusted-highlight"> Moves Trust Forward.</span></p>
-                <p className="trusted-paragraph">The NIK journey starts with the first communication to or from a new person. Even if the person never completes verification, they contribute a device fingerprint or user connection to the system. Every subsequent action, opting in, confirming email, building interaction history, moves the identity automatically toward full trust.</p> 
-            
-
-
-            </div>
-
-            <div className="trusted-image">
-            <img src={trustedImage} alt="" className=" bg-cover" />
-            </div>
-
+      <div className="tw-container pt-[100px] pb-[100px]">
+        <div className="mx-auto flex flex-col items-center justify-center text-center">
+          <p className="trusted-label mb-4">NIK USER JOURNEY</p>
+          <div className="trusted-heading mb-4">
+            <h2>
+              {" "}
+              Every Interaction
+              <span className="trusted-highlight"> Moves Trust Forward.</span>
+            </h2>
+          </div>
+          <div>
+            <p className="threat-body mb-[48px] max-w-3xl">
+              The NIK establishes trust in tiers — each a deeper level of
+              verified relationship. Verification actions like email
+              confirmation and recurring interaction automatically promote an
+              identity upward.
+            </p>
+          </div>
         </div>
-     
+        <div className="">
+          <div className="flex items-center justify-center">
+            <img src={trustedImage} alt="" className="w h-95 bg-cover" />
+          </div>
+        </div>
+      </div>
     </section>
   );
-} export default Trusted;
-        
-            
-        
-        
-
+}
+export default Trusted;
