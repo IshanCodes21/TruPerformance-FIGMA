@@ -7,7 +7,7 @@ import Objection from "./components/Objection";
 import Trusted from "./components/Trusted";
 import Stop from "./components/Stop";
 import Baner from "./components/Baner";
-
+import Foot from "./components/Foot";
 function App() {
   return (
     <>
@@ -20,6 +20,7 @@ function App() {
       <Trusted />
       <Stop />
       <Baner />
+      <Foot />
     </>
   );
 }

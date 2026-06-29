@@ -5,12 +5,14 @@ function Objection() {
     <section className="objection">
       <div className="tw-container pt-[80px] pb-[80px]">
         <div className="mx-auto flex flex-col items-center justify-center text-center">
-          <p className="threat-preheader mb-4">NIK TRUST TIER MODEL</p>
+          <p className="objection-preheader mb-4">NIK TRUST TIER MODEL</p>
           <div>
-            <h2 className="threat-label mb-[16px]">Trust, earned in tiers.</h2>
+            <h2 className="objection-label mb-[16px]">
+              Trust, earned in tiers.
+            </h2>
           </div>
           <div>
-            <p className="threat-body mb-[48px] max-w-3xl">
+            <p className="objection-body mb-[48px] max-w-3xl">
               The NIK establishes trust in tiers — each a deeper level of
               verified relationship. Verification actions like email
               confirmation and recurring interaction automatically promote an

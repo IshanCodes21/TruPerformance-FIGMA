@@ -13,7 +13,7 @@ function Trusted() {
             </h2>
           </div>
           <div>
-            <p className="threat-body mb-[48px] max-w-3xl">
+            <p className="trusted-body mb-[48px] max-w-3xl">
               The NIK establishes trust in tiers — each a deeper level of
               verified relationship. Verification actions like email
               confirmation and recurring interaction automatically promote an

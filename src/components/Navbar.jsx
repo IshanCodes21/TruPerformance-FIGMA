@@ -26,9 +26,9 @@ export default function Navbar() {
 
   return (
     <header className="w-full border-b bg-white">
-      <div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-5 lg:px-20">
+      <div className="tw-container flex max-w-[1440px] items-center justify-between pt-8 pb-8">
         {/* Logo */}
-        <img src={logoText} alt="Netarx" className="h-8 w-auto shrink-0" />
+        <img src={logoText} alt="Netarx" className="me-4 h-8 w-auto shrink-0" />
 
         {/* Desktop Menu */}
         <ul className="hidden items-center gap-8 xl:flex">
@@ -39,7 +39,7 @@ export default function Navbar() {
 
         {/* Desktop Buttons */}
         <div className="hidden items-center gap-3 xl:flex">
-          <button className="h-[60px] w-[176px] rounded-lg border-2 border-[#E5116E] font-bold text-[#E5116E] transition hover:bg-[#FFF0F7]">
+          <button className="ml-6 h-[60px] w-[176px] rounded-lg border-2 border-[#E5116E] font-bold text-[#E5116E] transition hover:bg-[#FFF0F7]">
             Download
           </button>
 
