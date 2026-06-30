@@ -2,8 +2,8 @@ import revampImage from "../assets/revamp/frame1871.svg";
 function Revamp() {
   return (
     <section className="revamp">
-      <div className="tw-container pt-[100px] pb-[100px]">
-        <div className="tw-grid-col-12 flex items-stretch gap-[45px]">
+      <div className="tw-container pt-25 pb-25">
+        <div className="tw-grid-col-12 flex items-stretch gap-11.25">
           <div className="revamp-left order-1 col-span-12 lg:order-2 lg:col-span-6">
             <div className="h-full pr-0">
               <div className="revamp-label mb-4">HOW IT WORKS</div>

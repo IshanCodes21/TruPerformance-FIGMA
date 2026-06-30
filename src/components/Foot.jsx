@@ -164,7 +164,7 @@ function Foot() {
             </div>
           </div>
 
-          <div className="frame1789 pt-[80px]">
+          <div className="frame1789 pt-20">
             <p className="finalt1">© 2026 Netarx</p>
             <p className="finalt1">Privacy Policy</p>
             <p className="finalt2">|</p>

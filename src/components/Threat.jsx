@@ -4,16 +4,16 @@ import stat3Image from "../assets/threat/stat3.png";
 function Threat() {
   return (
     <section className="threat">
-      <div className="tw-container pt-[80px] pb-[80px]">
+      <div className="tw-container pt-20 pb-20">
         <div className="mx-auto flex flex-col items-center justify-center text-center">
           <p className="threat-preheader mb-4">THE RESULT </p>
           <div>
-            <h2 className="threat-label mb-[16px]">
+            <h2 className="threat-label mb-4">
               Trust, distilled into one light.
             </h2>
           </div>
           <div>
-            <p className="threat-body mb-[48px] max-w-3xl">
+            <p className="threat-body mb-12 max-w-3xl">
               The result is a single visual indicator: a traffic light. Green
               means trust. Yellow means caution. Red means stop. No dashboards
               to interpret. No alerts to triage. One answer, always visible, for

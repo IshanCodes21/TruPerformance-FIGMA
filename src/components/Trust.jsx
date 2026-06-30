@@ -2,13 +2,13 @@ import trustImage from "../assets/trust/trustimage.svg";
 function Trust() {
   return (
     <section className="trust">
-      <div className="tw-container pt-[100px] pb-[63px]">
-        <div className="tw-grid-col-12 flex items-stretch gap-[30px]">
+      <div className="tw-container pt-25 pb-15.75">
+        <div className="tw-grid-col-12 flex items-stretch gap-7.5">
           <div className="trust-left order-1 col-span-12 lg:order-1 lg:col-span-6">
             <div className="h-full pr-0">
-              <div className="trust-label mb-[24px]">Product Description</div>
+              <div className="trust-label mb-6">Product Description</div>
 
-              <div className="trust-heading mb-[24px]">
+              <div className="trust-heading mb-6">
                 <h2>
                   A single key,
                   <span className="trust-highlight"> built on </span>

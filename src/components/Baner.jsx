@@ -8,7 +8,7 @@ function Baner() {
 
   return (
     <section className="baner">
-      <div className="tw-container pt-[80px]">
+      <div className="tw-container pt-20">
         <p className="baner-label">
           Sign up for our newsletter
           <span className="baner-highlight">
@@ -41,7 +41,7 @@ function Baner() {
           </form>
         </div>
       </div>
-      <div className="separator mt-[95px] mb-[80px]"></div>
+      <div className="separator mt-23.75 mb-20"></div>
     </section>
   );
 }

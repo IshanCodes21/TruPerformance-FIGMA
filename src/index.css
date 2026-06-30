@@ -416,6 +416,7 @@ display: flex;
 align-items: flex-start;
 gap: 12px;
 margin-top: 36px;
+
 }
 
 
@@ -425,7 +426,7 @@ min-height: var(--line-height-27, 27px);
 padding: 18px;
 justify-content: center;
 align-items: flex-start;
-align-self: auto;
+align-self: stretch;
 border-radius: 8px;
 border: var(--stroke-weight-1, 1px) solid var(--color-azure-89, #DDE5E9);
 background: var(--color-grey-99, #FBFCFC);
@@ -436,6 +437,7 @@ padding-bottom: 1px;
 flex-direction: column;
 align-items: flex-start;
 flex: 1 0 0;
+
 }
 .baner-btn{
 color: var(--www-netarx-com-white, var(--color-white-solid, #FFF));
@@ -856,7 +858,7 @@ line-height: var(--item-spacing-24, 24px); /* 150% */
     .baner-frame1787{
         display:flex;
         flex-direction:row;   /* <-- NOT column */
-        align-items:center;
+        align-items:flex-start;
         justify-content:center;
         gap:12px;
         width:100%;
