@@ -27,8 +27,8 @@ body {
           background-image: url('assets/hero/image.png');
           background-repeat: no-repeat;
           background-size: cover;
-          padding-top: 80px;
-          padding-bottom: 80px;
+          padding-top: 71px;
+          padding-bottom: 71px;
         }
        
 
@@ -306,7 +306,8 @@ line-height: 27px; /* 150% */
  .stop{  
   width: 100%;
   height: 436px;
-
+  border-top: 2px solid #E5116E;
+  background: linear-gradient(180deg, rgba(255, 235, 245, 0.70) 0%, rgba(255, 255, 255, 0.00) 100%), #F1F2F2;
   overflow: hidden;
 }
 
@@ -539,10 +540,11 @@ line-height: var(--item-spacing-24, 24px); /* 150% */
 }
 .objection{
    background-image: url('assets/objection/asset.svg');
-          background-repeat: no-repeat;
-          background-size:cover;
-          background-position: bottom;
-          background-size: auto;
+    background-repeat:no-repeat;
+    background-position:center bottom;
+    background-size:100% auto;
+
+         
           
 }
 .baner{
@@ -1322,4 +1324,13 @@ line-height: var(--item-spacing-24, 24px); /* 150% */
         font-size:15px;
     }
 
+}
+.footer{
+
+    padding-bottom:0;
+
+}
+
+p{
+  margin:0;
 }

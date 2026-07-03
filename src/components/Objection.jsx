@@ -1,10 +1,9 @@
-import objectionbg from "../assets/objection/asset.svg";
 import objectionImage from "../assets/objection/objectionimg.webp";
 function Objection() {
   return (
     <section className="objection">
       <div className="tw-container pt-20 pb-20">
-        <div className="mx-auto flex flex-col items-center justify-center text-center">
+        <div className="mx-auto flex flex-col justify-center">
           <p className="objection-preheader mb-4">NIK TRUST TIER MODEL</p>
           <div>
             <h2 className="objection-label mb-4">Trust, earned in tiers.</h2>
@@ -18,7 +17,7 @@ function Objection() {
             </p>
           </div>
         </div>
-        <div className="relative h-full">
+        <div className="relative mt-12 h-full">
           <div className="relative flex h-auto w-full overflow-hidden">
             <img
               src={objectionImage}

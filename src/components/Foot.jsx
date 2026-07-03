@@ -10,7 +10,7 @@ function Foot() {
   return (
     <footer className="footer">
       <div className="tw-container">
-        <div className="tw-grid-6 mb-9 md:mb-20">
+        <div className="tw-grid-6">
           <div className="col-span-6 lg:col-span-7">
             <div className="flex flex-wrap gap-4">
               <div className="w-[47%] lg:w-auto lg:max-w-1/6">

@@ -40,8 +40,8 @@ function Baner() {
             </div>
           </form>
         </div>
+        <div className="separator mt-23.75 mb-20"></div>
       </div>
-      <div className="separator mt-23.75 mb-20"></div>
     </section>
   );
 }

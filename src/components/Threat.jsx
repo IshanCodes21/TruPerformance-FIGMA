@@ -5,7 +5,7 @@ function Threat() {
   return (
     <section className="threat">
       <div className="tw-container pt-20 pb-20">
-        <div className="mx-auto flex flex-col items-center justify-center text-center">
+        <div className="mx-auto flex flex-col justify-center">
           <p className="threat-preheader mb-4">THE RESULT </p>
           <div>
             <h2 className="threat-label mb-4">
@@ -13,14 +13,14 @@ function Threat() {
             </h2>
           </div>
           <div>
-            <p className="threat-body mb-12 max-w-3xl">
+            <p className="threat-body max-w-3xl">
               The result is a single visual indicator: a traffic light. Green
               means trust. Yellow means caution. Red means stop. No dashboards
               to interpret. No alerts to triage. One answer, always visible, for
               everyone in your organization.
             </p>
           </div>
-          <div className="relative h-full">
+          <div className="relative mt-12 h-full">
             <div className="relative flex h-auto w-full overflow-hidden">
               <div className="stat1">
                 <img

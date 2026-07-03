@@ -25,13 +25,13 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white">
+    <header className="sticky top-0 z-50 w-full bg-white">
       <div className="tw-container flex max-w-360 items-center justify-between pt-8 pb-8">
         {/* Logo */}
         <img src={logoText} alt="Netarx" className="me-4 h-8 w-auto shrink-0" />
 
         {/* Desktop Menu */}
-        <ul className="hidden items-center gap-8 xl:flex">
+        <ul className="mr-5 hidden items-center space-x-8 xl:flex">
           {navItems.map((item) => (
             <NavItem key={item.label} {...item} />
           ))}
@@ -39,11 +39,11 @@ export default function Navbar() {
 
         {/* Desktop Buttons */}
         <div className="hidden items-center gap-3 xl:flex">
-          <button className="ml-6 h-15 w-44 rounded-lg border-2 border-[#E5116E] font-bold text-[#E5116E] transition hover:bg-[#FFF0F7]">
+          <button className="h-13 w-39 rounded-lg border-2 border-[#E5116E] font-bold text-[#E5116E] transition hover:bg-[#FFF0F7]">
             Download
           </button>
 
-          <button className="h-15 w-44 rounded-lg bg-[#E5116E] font-bold text-white transition hover:bg-[#d30f67]">
+          <button className="h-13 w-39 rounded-lg bg-[#E5116E] font-bold text-white transition hover:bg-[#d30f67]">
             Contact Us
           </button>
         </div>

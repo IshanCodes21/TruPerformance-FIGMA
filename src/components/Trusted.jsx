@@ -13,17 +13,19 @@ function Trusted() {
             </h2>
           </div>
           <div>
-            <p className="trusted-body mb-12 max-w-3xl">
-              The NIK establishes trust in tiers — each a deeper level of
-              verified relationship. Verification actions like email
-              confirmation and recurring interaction automatically promote an
-              identity upward.
+            <p className="trusted-body max-w-1129">
+              The NIK journey starts with the first communication to or from a
+              new person. Even if the person never completes verification, they
+              contribute a device fingerprint or user connection to the system.
+              Every subsequent action, opting in, confirming email, building
+              interaction history, moves the identity automatically toward full
+              trust.
             </p>
           </div>
         </div>
-        <div className="">
+        <div className="mt-9">
           <div className="flex items-center justify-center">
-            <img src={trustedImage} alt="" className="w h-95 bg-cover" />
+            <img src={trustedImage} alt="" className="h-95 w-194 bg-cover" />
           </div>
         </div>
       </div>

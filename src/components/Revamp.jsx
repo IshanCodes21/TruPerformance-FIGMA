@@ -16,7 +16,7 @@ function Revamp() {
                 </h2>
               </div>
               <div className="revamp-bod">
-                <p className="mb-4">
+                <p>
                   Under the hood, Netarx ingests hundreds of digital signals
                   simultaneously. Our AI inference models are multimodal and
                   multisensory, working in concert across every available

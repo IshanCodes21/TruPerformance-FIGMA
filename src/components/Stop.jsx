@@ -14,13 +14,9 @@ function Stop() {
 
           <div className="stop-cta mt-10">
             <button className="stop-btn">
-              Request a demo<span className="stop-arrow"> →</span>
+              Request a demo<span className="stop-arrow ml-2"> →</span>
             </button>
           </div>
-          <p className="stop-text mt-4">
-            Demo is for authorized internal security demonstration purposes
-            only. No data is stored or retained.
-          </p>
         </div>
       </div>
     </section>
