@@ -25,9 +25,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white">
+    <header className="navbar sticky top-0 z-50 w-full bg-white">
       <div className="tw-container flex max-w-360 items-center justify-between pt-8 pb-8">
         {/* Logo */}
+
         <img src={logoText} alt="Netarx" className="me-4 h-8 w-auto shrink-0" />
 
         {/* Desktop Menu */}

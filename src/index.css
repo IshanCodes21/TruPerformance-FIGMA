@@ -571,7 +571,10 @@ line-height: var(--item-spacing-24, 24px); /* 150% */
 @media (max-width:1080px){
 
     /* ---------- Global ---------- */
-
+.navbar{
+        padding-top:24px;
+        padding-bottom:24px;
+    }
     .tw-container{
         width:100%;
         max-width:100%;
@@ -801,7 +804,10 @@ line-height: var(--item-spacing-24, 24px); /* 150% */
 @media (max-width:431px){
 
     /* ---------- Global ---------- */
-
+    .navbar{
+        padding-top:24px;
+        padding-bottom:24px;
+    }
     .tw-container{
         width:100%;
         max-width:100%;
@@ -1690,7 +1696,10 @@ line-height: var(--item-spacing-24, 24px); /* 150% */
 @media (max-width:760px){
 
     /* ---------- Container ---------- */
-
+.navbar{
+        padding-top:24px;
+        padding-bottom:24px;
+    }
     .tw-container{
         width:100%;
         max-width:100%;
