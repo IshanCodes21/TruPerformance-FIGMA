@@ -566,154 +566,235 @@ line-height: var(--item-spacing-24, 24px); /* 150% */
 }
 
 /* ================= HERO RESPONSIVE ================= */
-
-@media (max-width: 1080px) {
-
-  .hero .tw-grid-col-12{
-      flex-direction: column;
-      align-items: center;
-      gap: 40px;
-  }
-
-  .hero-left{
-      width:100%;
-      max-width:1240px;
-      padding-right:0;
-  }
-
-  .hero-image{
-      width:100%;
-      display:flex;
-      justify-content:center;
-      margin-top:20px;
-    
-  }
-
-  .hero-image img{
-      width:100%;
-      max-width:450px;
-      height:auto;
-      display:block;
-  }
-
-}
-/* ================= TRUST RESPONSIVE ================= */
+/* ===================== 1080px ===================== */
 
 @media (max-width:1080px){
 
-    .trust .tw-grid-col-12{
-        display:flex !important;
-        flex-direction:column !important;
+    /* ---------- Global ---------- */
+
+    .tw-container{
+        width:100%;
+        max-width:100%;
+        padding:0 40px;
+    }
+
+    section{
+        padding-top:72px;
+        padding-bottom:72px;
+    }
+
+    /* ---------- Navbar ---------- */
+
+    .desktop-menu,
+    .desktop-buttons{
+        display:none !important;
+    }
+
+    .mobile-toggle{
+        display:block;
+        font-size:30px;
+        cursor:pointer;
+        border:none;
+        background:transparent;
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero .tw-grid-col-12{
+        display:flex;
+        flex-direction:column;
         align-items:center;
-        gap:40px;
+        gap:56px;
+    }
+
+    .hero-left{
+        width:100%;
+        max-width:none;
+        padding-right:0;
+    }
+
+    .hero-image{
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .hero-image img{
+        width:100%;
+        max-width:650px;
+        height:auto;
+    }
+
+    /* ---------- Trust ---------- */
+
+    .trust .tw-grid-col-12{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:56px;
     }
 
     .trust-left{
         width:100%;
-        max-width:1240px;
+        max-width:none;
         order:1;
     }
 
     .trust .hero-image{
+        order:2;
         width:100%;
         display:flex;
         justify-content:center;
-        order:2;
     }
 
     .trust .hero-image img{
         width:100%;
-        max-width:600px;
+        max-width:650px;
         height:auto;
-        display:block;
     }
 
-}
-/* ================= REVAMP RESPONSIVE ================= */
-
-@media (max-width:1080px){
+    /* ---------- Revamp ---------- */
 
     .revamp .tw-grid-col-12{
-        display:flex !important;
-        flex-direction:column !important;
+        display:flex;
+        flex-direction:column;
         align-items:center;
-        gap:40px;
+        gap:56px;
     }
 
     .revamp-left{
         width:100%;
-        max-width:1240px;
+        max-width:none;
         order:1;
     }
 
     .revamp-image{
+        order:2;
         width:100%;
         display:flex;
         justify-content:center;
-        order:2 !important;
     }
 
     .revamp-image img{
         width:100%;
-        max-width:600px;
+        max-width:650px;
         height:auto;
-        display:block;
     }
 
-} 
-/* ================= NAVBAR ================= */
+    /* ---------- Typography ---------- */
 
-.desktop-menu,
-.desktop-buttons{
-    display:flex;
+    .hero-heading,
+    .hero-head,
+    .trust-heading,
+    .trust-highlight,
+    .revamp-head,
+    .revamp-highlight,
+    .threat-label,
+    .objection-label,
+    .trusted-heading,
+    .trusted-highlight,
+    .stop-heading,
+    .stop-label,
+    .baner-label,
+    .baner-highlight{
+
+        font-size:56px;
+        line-height:62px;
+        max-width:none;
+        letter-spacing:-0.03em;
+
+    }
+
+    .hero-text,
+    .trust-paragraph,
+    .revamp-bod,
+    .threat-body,
+    .objection-body,
+    .trusted-body,
+    .stop-paragraph{
+
+        font-size:18px;
+        line-height:32px;
+
+    }
+
+    /* ---------- Newsletter ---------- */
+
+    .baner-frame1787{
+
+        display:flex;
+        align-items:center;
+        width:100%;
+        gap:16px;
+
+    }
+
+    .baner-container{
+
+        flex:1;
+        min-width:0;
+
+    }
+
+    .baner-input-frame{
+
+        width:100%;
+
+    }
+
+    .baner-btn-container{
+
+        flex-shrink:0;
+
+    }
+
+    .baner-btn-input{
+
+        width:170px;
+        height:60px;
+
+    }
+
+    /* ---------- Footer ---------- */
+
+    .footer{
+        padding:72px 0;
+    }
+
+    .tw-grid-6{
+
+        display:flex;
+        flex-direction:column;
+        gap:56px;
+
+    }
+
+    .tw-grid-6 > div:first-child > div{
+
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:40px;
+
+    }
+
+    .w-\[47\%\]{
+
+        width:100% !important;
+        max-width:none;
+
+    }
+
+    .frame1789{
+
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        gap:16px;
+
+    }
+
 }
 
-.mobile-toggle{
-    display:none;
-}
-
-.mobile-menu{
-    display:none;
-}
-
-/* ================= 1080px ================= */
-
-@media (max-width:1080px){
-
-.desktop-menu,
-.desktop-buttons{
-
-    display:none !important;
-
-}
-
-.mobile-toggle{
-
-    display:block;
-
-    font-size:30px;
-
-    cursor:pointer;
-
-    border:none;
-
-    background:transparent;
-
-}
-
-.mobile-menu{
-
-    display:block;
-
-    border-top:1px solid #F1F1F1;
-
-    background:#fff;
-
-    padding:24px;
-
-}
-
-}
 /* ================= MOBILE (375px) ================= */
 /* ===================== MOBILE (431px) ===================== */
 
@@ -1604,6 +1685,284 @@ line-height: var(--item-spacing-24, 24px); /* 150% */
 
 }
 
+/* ================= TABLET (760px) ================= */
 
+@media (max-width:760px){
+
+    /* ---------- Container ---------- */
+
+    .tw-container{
+        width:100%;
+        max-width:100%;
+        padding:0 24px;
+    }
+
+    section{
+        padding-top:56px;
+        padding-bottom:56px;
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero{
+        padding-top:56px;
+        padding-bottom:56px;
+    }
+
+    .hero-title{
+        font-size:13px;
+        line-height:18px;
+        letter-spacing:.28em;
+    }
+
+    .hero-heading,
+    .hero-head{
+        font-size:46px;
+        line-height:50px;
+        letter-spacing:-0.03em;
+        max-width:none;
+    }
+
+    .hero-text{
+        font-size:17px;
+        line-height:30px;
+    }
+
+    .hero-btn{
+        padding:16px 30px;
+        width:auto;
+    }
+
+    .hero-image img{
+        width:100%;
+        max-width:520px;
+    }
+
+    /* ---------- Trust ---------- */
+
+    .trust{
+        padding:56px 0;
+    }
+
+    .trust-label{
+        font-size:13px;
+        letter-spacing:.28em;
+    }
+
+    .trust-heading,
+    .trust-highlight{
+        font-size:44px;
+        line-height:50px;
+        max-width:none;
+    }
+
+    .trust-paraheader{
+        font-size:19px;
+        line-height:30px;
+    }
+
+    .trust-paragraph{
+        font-size:17px;
+        line-height:30px;
+    }
+
+    .trust .hero-image img{
+        max-width:520px;
+    }
+
+    /* ---------- Revamp ---------- */
+
+    .revamp{
+        padding:56px 0;
+    }
+
+    .revamp-label{
+        font-size:13px;
+        letter-spacing:.28em;
+    }
+
+    .revamp-head,
+    .revamp-highlight{
+        font-size:44px;
+        line-height:50px;
+        max-width:none;
+    }
+
+    .revamp-bod{
+        font-size:17px;
+        line-height:30px;
+    }
+
+    .revamp-image img{
+        max-width:520px;
+    }
+
+    /* ---------- Threat ---------- */
+
+    .threat-preheader{
+        font-size:13px;
+        letter-spacing:.28em;
+    }
+
+    .threat-label{
+        font-size:44px;
+        line-height:50px;
+        max-width:none;
+    }
+
+    .threat-body{
+        font-size:17px;
+        line-height:30px;
+    }
+
+    /* ---------- Objection ---------- */
+
+    .objection-preheader{
+        font-size:13px;
+        letter-spacing:.28em;
+    }
+
+    .objection-label{
+        font-size:44px;
+        line-height:50px;
+        max-width:none;
+    }
+
+    .objection-body{
+        font-size:17px;
+        line-height:30px;
+    }
+
+    /* ---------- Trusted ---------- */
+
+    .trusted-label{
+        font-size:13px;
+        letter-spacing:.28em;
+    }
+
+    .trusted-heading,
+    .trusted-highlight{
+        font-size:44px;
+        line-height:50px;
+        max-width:none;
+    }
+
+    .trusted-body{
+        font-size:17px;
+        line-height:30px;
+    }
+
+    /* ---------- Stop ---------- */
+
+    .stop{
+        height:auto;
+        padding:64px 0;
+    }
+
+    .stop-label,
+    .stop-heading{
+        font-size:44px;
+        line-height:50px;
+        max-width:none;
+    }
+
+    .stop-paragraph{
+        font-size:17px;
+        line-height:30px;
+    }
+
+    .stop-cta{
+        width:auto;
+        padding:16px 30px;
+    }
+
+    /* ---------- Newsletter ---------- */
+
+    .baner{
+        padding:64px 0;
+    }
+
+    .baner-label,
+    .baner-highlight{
+        font-size:44px;
+        line-height:50px;
+        text-align:center;
+        max-width:none;
+    }
+
+    .baner-frame1787{
+        display:flex;
+        align-items:center;
+        gap:12px;
+        width:100%;
+    }
+
+    .baner-container{
+        flex:1;
+        min-width:0;
+    }
+
+    .baner-input-frame{
+        width:100%;
+        padding:16px;
+    }
+
+    .baner-btn-container{
+        flex-shrink:0;
+    }
+
+    .baner-btn-input{
+        width:150px;
+        height:56px;
+    }
+
+    /* ---------- Footer ---------- */
+
+    .footer{
+        padding:64px 0;
+    }
+
+    .tw-grid-6{
+        display:flex;
+        flex-direction:column;
+        gap:48px;
+    }
+
+    .tw-grid-6 > div:first-child > div{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:32px;
+    }
+
+    .w-\[47\%\]{
+        width:100% !important;
+        max-width:none;
+    }
+
+    .links{
+        gap:10px;
+    }
+
+    .link-text{
+        font-size:16px;
+        line-height:24px;
+    }
+
+    .row-start-2{
+        gap:16px;
+    }
+
+    .grid.grid-cols-2{
+        gap:20px;
+    }
+
+    .frame1789{
+        padding-top:48px !important;
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        gap:12px;
+    }
+}
 
 
