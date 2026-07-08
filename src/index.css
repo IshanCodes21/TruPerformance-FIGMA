@@ -63,7 +63,7 @@ font-family: Poppins;
 font-size: 50px;
 font-style: normal;
 font-weight: 700;
-line-height: 100%; /* 100% */
+line-height: 60px /* 100% */
 }
 .hero-head{
   margin-bottom:36px;
@@ -73,7 +73,7 @@ font-family: Poppins;
 font-size: 50px;
 font-style: normal;
 font-weight: 700;
-line-height: 100%; /* 100% */
+line-height: 60px /* 100% */
 
 }
 .hero-btn {
@@ -128,7 +128,7 @@ font-family: Poppins;
 font-size: 48px;
 font-style: normal;
 font-weight: 700;
-line-height: 48px; /* 100% */
+line-height: 55px; /* 100% */
 text-transform: capitalize;
 
 }
@@ -1342,6 +1342,4 @@ line-height: var(--item-spacing-24, 24px); /* 150% */
 
 }
 
-p{
-  margin:0;
-}
+

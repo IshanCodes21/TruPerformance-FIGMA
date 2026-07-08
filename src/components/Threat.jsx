@@ -6,9 +6,9 @@ function Threat() {
     <section className="threat">
       <div className="tw-container pt-20 pb-20">
         <div className="mx-auto flex flex-col justify-center">
-          <p className="threat-preheader mb-4">THE RESULT </p>
+          <p className="threat-preheader">THE RESULT </p>
           <div>
-            <h2 className="threat-label mb-4">
+            <h2 className="threat-label mt-4 mb-4">
               Trust, distilled into one light.
             </h2>
           </div>

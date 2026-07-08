@@ -4,9 +4,11 @@ function Objection() {
     <section className="objection">
       <div className="tw-container pt-20 pb-20">
         <div className="mx-auto flex flex-col justify-center">
-          <p className="objection-preheader mb-4">NIK TRUST TIER MODEL</p>
+          <p className="objection-preheader">NIK TRUST TIER MODEL</p>
           <div>
-            <h2 className="objection-label mb-4">Trust, earned in tiers.</h2>
+            <h2 className="objection-label mt-4 mb-4">
+              Trust, earned in tiers.
+            </h2>
           </div>
           <div>
             <p className="objection-body mb-12 max-w-3xl">
