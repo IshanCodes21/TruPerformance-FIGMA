@@ -15,21 +15,21 @@ function Hero() {
               </div>
               <p></p>
               <div className="hero-text">
-                <p>
+                <p className="hero-text-1">
                   Netarx gives organizations something they've lost entirely -
                   trust in the people they communicate with. It starts with the
                   Netarx Identity Key, an advanced passkey installed on each
                   device that travels with every communication.
                 </p>
 
-                <p className="mt-3 mb-3">
+                <p>
                   As relationships build, our AI analyzes hundreds of digital
                   signals at once - multimodal and multisensory, working in
                   concert - to give every person one simple answer: green,
                   yellow, or red.
                 </p>
 
-                <p>
+                <p className="hero-text-2">
                   {" "}
                   Not one signal. Not one modality. Everything, continuously,
                   distilled into one light.

@@ -93,6 +93,17 @@ line-height: 100%; /* 100% */
 
   cursor: pointer;
 }
+.hero-text{
+  color: #354457;}
+
+.hero-text-1{
+  
+  margin-bottom: 12px;
+}
+.hero-text-2{
+ 
+  margin-top: 12px;
+}
 
  .trust{
 
