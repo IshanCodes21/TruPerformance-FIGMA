@@ -25,7 +25,7 @@ function Trusted() {
         </div>
         <div className="mt-9">
           <div className="flex items-center justify-center">
-            <img src={trustedImage} alt="" className="h-95 w-194 bg-cover" />
+            <img src={trustedImage} alt="" className="h-126.5 w-194 bg-cover" />
           </div>
         </div>
       </div>
