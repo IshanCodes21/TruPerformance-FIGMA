@@ -57,7 +57,7 @@ text-transform: uppercase;;
 }
 
 .hero-heading {
-  margin-top:36px;
+
 color: #364457;
 font-family: Poppins;
 font-size: 50px;
@@ -138,7 +138,7 @@ font-family: Poppins;
 font-size: 48px;
 font-style: normal;
 font-weight: 700;
-line-height: 48px;
+line-height: 72px;
 text-transform: capitalize;
 }
 .trust-paraheader{
@@ -186,7 +186,7 @@ font-family: Poppins;
 font-size: 48px;
 font-style: normal;
 font-weight: 700;
-line-height: 48px; /* 100% */
+line-height: 72px; /* 100% */
 }
 .revamp-highlight{
   color: var(--Magenta-Rose_NetarxColor, #E5116E);
@@ -330,7 +330,7 @@ font-family: Poppins;
 font-size: 48px;
 font-style: normal;
 font-weight: 700;
-line-height: 48px; /* 100% */
+line-height: 55px; /* 100% */
 }
 .stop-heading{
 align-self: stretch;
@@ -340,7 +340,7 @@ font-family: Poppins;
 font-size: 48px;
 font-style: normal;
 font-weight: 700;
-line-height: 48px; /* 100% */
+line-height: 72px; /* 100% */
 }
 .stop-paragraph{
 max-width: 720px;
@@ -411,7 +411,7 @@ font-family: Poppins;
 font-size: 48px;
 font-style: normal;
 font-weight: 700;
-line-height: var(--line-height-55, 55px); /* 100% */
+line-height: var(--line-height-72, 72px); /* 100% */
 }
 .baner-highlight{
 align-self: stretch;

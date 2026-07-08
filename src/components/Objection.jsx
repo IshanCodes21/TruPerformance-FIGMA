@@ -11,7 +11,7 @@ function Objection() {
             </h2>
           </div>
           <div>
-            <p className="objection-body mb-12 max-w-3xl">
+            <p className="objection-body max-w-3xl">
               The NIK establishes trust in tiers — each a deeper level of
               verified relationship. Verification actions like email
               confirmation and recurring interaction automatically promote an

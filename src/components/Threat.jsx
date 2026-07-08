@@ -1,6 +1,6 @@
-import stat1Image from "../assets/threat/stat1.png";
-import stat2Image from "../assets/threat/stat2.png";
-import stat3Image from "../assets/threat/stat3.png";
+import stat1Image from "../assets/threat/stat1.svg";
+import stat2Image from "../assets/threat/stat2.svg";
+import stat3Image from "../assets/threat/stat3.svg";
 function Threat() {
   return (
     <section className="threat">

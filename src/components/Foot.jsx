@@ -9,7 +9,7 @@ import l3Image from "../assets/baner/thecyber.svg";
 function Foot() {
   return (
     <footer className="footer">
-      <div className="tw-container">
+      <div className="tw-container pb-20">
         <div className="tw-grid-6">
           <div className="col-span-6 lg:col-span-7">
             <div className="flex flex-wrap gap-4">
