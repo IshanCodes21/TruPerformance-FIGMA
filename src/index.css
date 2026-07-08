@@ -411,7 +411,7 @@ font-family: Poppins;
 font-size: 48px;
 font-style: normal;
 font-weight: 700;
-line-height: var(--line-height-48, 48px); /* 100% */
+line-height: var(--line-height-55, 55px); /* 100% */
 }
 .baner-highlight{
 align-self: stretch;
